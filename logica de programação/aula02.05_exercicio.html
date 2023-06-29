@@ -22,27 +22,27 @@
             alert("voces empataram");
         } else {
         //sortear um número entre 0 e 1
-        var nsorteado = (math.random() * 2);
+        var nsorteado = parseInt(Math.random() * 2);
         //se o número sorteado for 0 ganha o jogador que escolher o número menor
         if(nsorteado ===0){
 
             if(jog1 < jog2){
-                alert("ganhou o jogador 1")
+                alert("ganhou o jogador 1");
             } else {
-                alert("ganhou o jogador 2")
+                alert("ganhou o jogador 2");
             }
         //se o número sorteado for 1 ganha o jogador que escolher o número maior  
         } else {
             if(jog1 > jog2){
-                alert("ganhou o jogador 1")
+                alert("ganhou o jogador 1");
             } else {
-                alert("ganhou o jogador 2")
+                alert("ganhou o jogador 2");
             }
         }
         
         }
         
-        
+        /*O atributo Math.random(), serve para sortear 1 numero entre zero e quase um, ou seja, 0.989999999 por exemplo, ao usar o Math.random() * 2 a intensão é que passe de um e fique 1.000258999, por exemplo. Ao usar o parseInt que ignora as casas decimais, ficaremos então com o resultado 0 OU 1. */
 
         
 
