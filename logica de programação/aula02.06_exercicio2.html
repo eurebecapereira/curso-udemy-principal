@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programção</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        //pedir ao jogador 1 para digitar um número
+        var jog1 = prompt('número do jogador 1');
+        jog1 = parseInt(jog1);
+
+        //pedir ao jogador 2 para digitar um número
+        var jog2 = parseFloat(prompt('número do jogador 2'));
+        jog2 = parseInt(jog2);
+
+        //se forem iguais, mensagem de empate
+        if(jog1 === jog2){
+            alert("voces empataram");
+        } else {
+        //sortear um número entre 0 e 1
+        var nsorteado = parseInt(Math.random() * 2);
+        alert('nsorteado: ' + nsorteado )
+        
+        
+        if( (nsorteado === 0 && jog1 < jog2) || (nsorteado === 1 && jog1 > jog2)) {
+            alert('Ganhou o jogador 1') 
+                
+            } else {
+                alert('ganhou o jogador 2')
+            }
+        }
+        
+        
+        /*O atributo Math.random(), serve para sortear 1 numero entre zero e quase um, ou seja, 0.989999999 por exemplo, ao usar o Math.random() * 2 a intensão é que passe de um e fique 1.000258999, por exemplo. Ao usar o parseInt que ignora as casas decimais, ficaremos então com o resultado 0 OU 1. */
+
+        
+
+    </script>
+</body>
+</html>
