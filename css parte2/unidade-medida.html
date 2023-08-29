@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medidas</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+            padding-bottom: 550px;
+        }
+
+        h1 {
+            font-size: 3.4em;
+        }
+
+        b {
+            color: red;
+            font-size: 1em;
+            /*30px*/
+            font-size: 3rem;
+            /*30px*/
+            font-size: 50%;
+        }
+
+        p {
+            font-size: 2em;
+            width: 10em;
+            background-color: #ccc;
+            /* - ao cravar o tamanho da letra em pixels pode ser que atrpalhe a personalização de usuário de aumentar e mdiminuir a letra
+            
+            - por isso o ideal é que se use px apenas em margin, padding, box shadow ou text- shadow
+            
+            - width e heigth não é interessante usar*/
+        }
+
+        .porcentagem {
+            width: 60%;
+            height: 500px;
+            background-color: yellow;
+        }
+
+        .porcentagem p {
+            background-color: orange;
+            padding-top: 50%;
+            width: 50%;
+            font-size: 1rem;
+        }
+        .padding-em {
+            background-color: red;
+        }
+        .padding-em p {
+            background-color: transparent;
+            margin: 0;
+            padding: 1em; /*este padding se adapta ao tamanho do font size*/
+            /*10px*/
+            font-size: 30px;
+        }
+
+        .viewport-container {
+            font-size: 3rem;
+            height: auto;
+            
+        }
+
+        .viewport {
+            width: 90vw;
+            height: 90vh;
+            background-color: rgba(0, 0, 255, 0.477);
+        }
+
+        .em {
+            width: 20em; /*um em é relacionado ao tamanho do font-size, equivalente eme px*/
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+        .ch {/*não é tão utilizado*/
+            width: 20ch; /*o ch equivale a largura do número zero, letras i e t ocupa menos espaço*/
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de medidas</h1>
+    <p>Lorem ipsum dolor sit amet, <b>texto em negrito</b> consectetur adipisicing elit. Numquam, tenetur voluptate facilis soluta at vero, ex rem animi dolorem vitae illo perferendis. Odit tempora, obcaecati quisquam quis omnis ad accusantium!</p>
+    <!--A fonte padrão de letra é 16 pixels, porém o usuário pode configurar para aumentar ou diminuir a letra -->
+
+    <div class="porcentagem">
+        <p>Unidade de medida %</p>
+    </div>
+
+    <div class="padding-em">
+        <p>padding com em</p>
+    </div>
+
+    <div class="porcentagem viewport-container">
+        
+        <div class="viewport">viewport</div>
+    </div>
+
+    <div class="em">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iusto asperiores blanditiis voluptates laudantium aperiam distinctio labore? Animi, magnam vel.
+
+    </div>
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea eveniet dolor consequuntur maxime suscipit. Sequi eaque ex placeat nesciunt.
+    </div>
+</body>
+</html>
