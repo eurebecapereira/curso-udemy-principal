@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc()</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(255, 60, 0, 0.527);
+            height: 15rem;
+            font-size: 2rem;
+            position: fixed; /*esta propriedade fixou o header, mesmo rolando a página*/
+            top: 0;
+            left: 0;
+        }
+
+        main {
+            min-height: calc(100vh - 15rem - 2rem); /*Função calc() para fazer cálculos de qualquer tipo de unidade de medida. Neste exemplo foi diminuido d 100vh 15rem do header e 2 rem para fazer o footer aparecer em baixo.*/
+            background-color: #ccc;
+            font-size: 2rem;
+            margin-top: 15rem;
+        }
+
+        footer {
+            height: 10rem;
+            font-size: 2rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>
