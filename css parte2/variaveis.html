@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+
+    <style>
+
+        /*:root {
+            --header-height: 15rem; 
+        }
+        uma boa prática é usar as variáveis dentro do :root*/
+        html {
+            font-size: 62.5%;
+            --header-height: 15rem; /*a variável foi criada dentro da tag html porque todos os elementos estão dentro do html, fazendo com que possa ser usado em todo o código*/
+
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(255, 60, 0, 0.527);
+            height: var(--header-height); /*a vantagem de usar variáveis dessa froma é que ao alterar a variável, altera automaticamente onde ela tiver sido usada*/
+            font-size: 2rem;
+            position: fixed; /*esta propriedade fixou o header, mesmo rolando a página*/
+            top: 0;
+            left: 0;
+        }
+
+        main {
+            min-height: calc(100vh - var(--header-height) - 2rem); /*Função calc() para fazer cálculos de qualquer tipo de unidade de medida. Neste exemplo foi diminuido d 100vh 15rem do header e 2 rem para fazer o footer aparecer em baixo.*/
+            background-color: #ccc;
+            font-size: 2rem;
+            margin-top: var(--header-height);
+        }
+
+        footer {
+            height: 10rem;
+            font-size: 2rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>
