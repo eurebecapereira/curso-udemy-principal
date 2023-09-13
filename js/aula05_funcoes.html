@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+
+        //literal
+        function somar(n1, n2){
+            //corpo da função
+            return n1 + n2;
+        }
+
+        var soma = somar(10, 20);
+        console.log('Resultado: ', soma);
+
+        somar.teste = 'propriedade da funcao';
+
+        console.log(somar.teste);
+        //atribui uma função a uma variável, teste
+        //uma função não precisa ter nome(não é obrigatório) função anônima
+        var teste = function abacaxi(f) { 
+            f();
+        }
+        //executando uma função teste, passando por parametro uma outra função
+        teste(function() {
+            console.log('funcao passada por parametro');
+        });
+
+        console.log('------------------')
+
+        var x = 0; //variavel do escopo global
+
+        function mostraX(){
+            var x = 10; //ESCOPO LOCAL - essa existe dentro desta funcao, diferente da de cima
+            console.log("mostra x: " , x);
+        }
+
+        mostraX()
+
+        console.log("mostra x: " , x);
+        /*PARA FAZER COM QUE AS DUAS VARIÁVEIS TIVESSEM O MESMO RESULTADO(10) TERIA QUE TIRAR VAR DENTRO DA FUNCTION E ASSIM ATRIBUIRIA A X O VALOR 10.*/
+
+        // FUNÇÃO AUTO INVOCÁVEL = IIFE
+
+        (function(){
+            var isValid = false;
+        })()
+
+        console.log(isValid); //isso vai dar um erro, pois esta variavel não esta acessível ao escopo de fora da função
+
+        (function(){
+            'use strict';
+            var isValid = false;
+            console.log(isValid);
+
+            function somar(arr){
+                console.log(arguments);
+                var result = 0;
+                var x = 0;
+
+                while(arguments[x]){
+                    //result = result + arguments[x];
+                    result += arguments[x];
+                    //x = x + 1;
+                    x++;
+                }
+                console.log('result: ', result);
+            }
+            somar(20, 20, 10, 30);
+        })();
+    </script>
+    
+</head>
+<body>
+    <h1>Curso de JavaScript completo</h1>
+</body>
+</html>
