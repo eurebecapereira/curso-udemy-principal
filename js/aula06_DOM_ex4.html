@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM</title>
+
+    
+</head>
+<body>
+    <h1>Curso Javascript completo 2008</h1>
+    <input type="text" id="txtNome" value="digite">
+    
+
+    <script>
+    //sempre que tiver um $ quer dizer que está atribuindo a variável uma referência do DOM
+        var $txt = document.querySelector('#txtNome');
+        var nome = "Rebeca ";
+        var sobrenome = "Silva Pereira";
+
+        //.value .textContent e .innerHTML servem para recuparar valor e para definir valor, usando o =.
+
+        document.querySelector('#txtNome').value = nome + sobrenome;
+        document.querySelector('#txtNome').disabled = true;
+        //document.querySelector('#txtNome').readOnly = true;
+    </script>
+</body>
+</html>
