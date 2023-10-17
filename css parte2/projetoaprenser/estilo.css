@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #fed001;
+}
+
+
+html {
+    /*font-size: 62.5%; /*nesse caso 1 rem vai valer 10px
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;*/
+    font: 400 62.5% 'Inter', sans-serif; /*atalho para configurações de font*/
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+.uper {
+    text-transform: uppercase;
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-light {
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container {
+    max-width: 1276px;
+    margin: auto;
+}
