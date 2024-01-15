@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+            <label for="">Email</label>
+            <br>
+            
+            <input type="email" name="email" required>
+            <br><br>
+            
+            <!--não usar o br para isso, foi usado apenas para exemplo no exercício.-->
+            <label for="filhos">Quantidade de filhos</label>
+            <br>
+            <input type="number" id="filhos" min="0" max="1000">
+            <br><br>
+
+            <input type="date" min="2022-01-15" max="2022-12-15">
+            <br><br>
+
+            Possui atividade extra?
+            <label>
+                <input type="radio" name="atvExtra">Sim
+            </label>
+            <label>
+                <input type="radio" name="atvExtra">Não
+            </label>
+            
+            <br><br><br>
+            <input type="submit" value="mandar">
+
+            
+
+
+        </fieldset>
+    </form>
+</body>
+
+<!--Nesta aula foi explicada a importância de marcar corretamente o html. Selecionar o input type email quando for para email, e não usar o text. Isso é para que o interpretador "adapte/personalise" o teclado para a necessidade do usuário-->
+</html>
