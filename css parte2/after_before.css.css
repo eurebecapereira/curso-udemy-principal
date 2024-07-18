@@ -1,0 +1,30 @@
+p::before {
+    content: " ANTES "
+}
+
+/*:: = pseudo elemento, ao usar before e after sempre utilizar content*/
+
+P::AFTER {
+    content: " DEPOIS "
+}
+/*esse conteúdo não é visível pelos motores de busca*/
+div {
+    border: 3px solid red;
+    padding: 1em;
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+div::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
