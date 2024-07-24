@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe :has()</title>
+
+    <style>
+        
+        p a {
+            color: red;
+            background-color: yellow;
+        }
+        /*isto selecionou o elemento "a" que esta dentro do parágrafo*/
+
+        p:has(a) {
+            background-color: #ccc;
+        }
+
+        /*isto selecionou o "paragrafo" que nele contém um elemento "a"*/
+       
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem tempora eveniet inventore<a href="#">clique aqui para saber mais</a> placeat ipsum illum quod quia, explicabo laboriosam nemo quo, molestiae a repudiandae soluta excepturi quis qui sit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi doloremque pariatur harum animi, sit illum tempore reiciendis dolorem eaque labore ipsum <a href="#" class="teste">clique aqui para saber mais</a>est unde ex. Eveniet cumque error iste quidem.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio sit officia odit consectetur architecto fugit excepturi quibusdam animi ex temporibus libero facere, vero quod labore inventore. Sed, dolores sequi?</p>
+</body>
+</html>

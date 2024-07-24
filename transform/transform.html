@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body {
+            margin-bottom: 100vh;
+        }
+        
+        div {
+            outline: 1px solid #888;
+            width: 200px;
+            margin: .5em auto;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        .div1 .destaque {
+            transform: translate(50px, 50px);
+        }
+
+        /*primeiro valor no eixo x=horizontal e segundo valor no eixo y=vertical*/
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+</body>
+</html>
