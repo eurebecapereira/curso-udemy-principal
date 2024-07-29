@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações múltiplas</title>
+    <style>
+        body {
+            margin-bottom: 100vh;
+        }
+        
+        div {
+            outline: 1px solid #888;
+            width: 200px;
+            margin: .5em auto;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+    
+
+        .div6 .destaque {
+            transform:  translate(100px) rotate(30deg);
+            transform-origin: left bottom;
+        }
+
+        .div7 .destaque {
+            transform: rotate(45deg) translate(100px);
+            transform-origin: left bottom;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+
+        <!--a ordem dos fatores altera o produto-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body {
+            margin-bottom: 100vh;
+        }
+        
+        div {
+            outline: 1px solid #888;
+            width: 200px;
+            margin: .5em auto;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        .div1 .destaque {
+            transform: translate(50%, 50%);
+        }
+
+        .div2 .destaque {
+            position: relative;
+            left: 25%;
+            top: 25%;
+        }
+
+        .div3 .destaque {
+            transform: rotate(30deg);
+        }
+        /*números positivos rotaciona para direita, números negativos para esquerda*/
+
+        .div4 .destaque {
+            transform: scale(.5);
+        }
+
+        .div5 .destaque {
+            transform: skew(45deg)
+        }
+
+        /*números maiores que 1 servem para ampliar, números menores que 1 para diminuir*/
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, inventore.</p>
+    </div>
+</body>
+</html>
