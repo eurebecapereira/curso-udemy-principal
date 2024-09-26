@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada 02</title>
+</head>
+<body>
+    <h1>Loops - For</h1>
+
+    <script>
+        let n = parseFloat(prompt("digite um número"))
+        //a linha abaixo faz uma verificação, se o usuário digitou um número, então prosseguir com o código.
+        //!isNaN: não é not a number, prossiga
+        if (!isNaN(n)) {
+            let contador = 0
+
+        //enquanto (contador <= 1000)
+        for (let i =0; i <= 1000; i++) {
+            document.write(n + " x " + i + ": " + n * i + "<br>")
+    
+        }
+        document.write("saiu do loop")
+        } else {
+            alert("digite apenas número")
+        }
+
+        
+
+    </script>
+</body>
+</html>
