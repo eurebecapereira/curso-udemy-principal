@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.gallery {
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;  /*para quebrar os conteudos*/
+    justify-content: space-between; /*fez com que as imagens se adequassem extamente ao fundo nas laterais*/
+    gap: .5em; /*gera espaçamento entre os itens*/
+    background-color: white;
+    padding: .5em; /*fez uma borda acima das imagens*/
+    box-shadow: 0 2 14px rgba(0, 0, 0, 0.5);
+}
+
+.gallery .image {
+    flex-basis: calc(25% - .5em); /*como se fosse a largura dos elementos*/
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery p {
+    background-color: rgba(0,0,0, .8);
+    color: white;
+    text-transform: uppercase;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: .75em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .2;
+    transform: translateY(100%);
+    transition: all .3s ease-in-out
+}
+
+.image a {
+    text-decoration: none;
+}
+
+.image:hover p {
+    transform: translateY(0%);
+    opacity: 1;
+}
+/*abaixo foi feito a aproximação da imagem ao colocar o cursor em cima*/
+.image img {
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+
+}
+
+.image:hover img {
+    transform: scale(1.2);
+}
+/*fazer esfumado branco*/
+.image::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.637);
+    inset:0;
+    opacity: .5;
+    pointer-events: none;
+    transition: opacity .5s ease-in-out;
+}
+
+.image:hover::after {
+    opacity: 0;
+}

@@ -137,6 +137,11 @@
             position: absolute;
             outline: none;
         }
+        /*abaixo a acessibilidade, ao estar com o cursor em cima fará auma borda preta*/
+        .switch input:focus+span {
+            outline: 2px solid black;
+            outline-offset: 2px;
+        }
 
         
     </style>
